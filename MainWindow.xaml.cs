@@ -127,19 +127,25 @@ namespace Calculator
             operators = -1;
         }
 
-        private void btnBACK_Click(object sender, RoutedEventArgs e)
+        private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void btnBack_Click_1(object sender, RoutedEventArgs e)
-        {
-
+            if (txtNumber.Text.Length > 0)
+            {
+                txtNumber.Text = txtNumber.Text.Remove(txtNumber.Text.Length - 1, 1);
+            }
+            //當bs被按下，如果txt_number.Text有字符，就會把txt_number.Text最後一個字符刪除
         }
 
         private void btnPc_Click(object sender, RoutedEventArgs e)
         {
+            double a;
 
+            {
+                if (double.TryParse(txtNumber.Text, out a) == true)
+                {
+                    txtNumber.Text = string.Format("{0:0.##}", a / 100);
+                }
+            }
         }
 
         private void btnEqual_Click(object sender, RoutedEventArgs e)

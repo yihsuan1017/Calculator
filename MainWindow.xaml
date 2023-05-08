@@ -25,7 +25,7 @@
         <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="493,330,0,0" VerticalAlignment="Top" FontSize="20" Height="27" Width="123" RenderTransformOrigin="1.629,1.274" Click="btnEqual_Click"/>
         <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="667,330,0,0" VerticalAlignment="Top" FontSize="20" Height="27" Width="123" RenderTransformOrigin="1.629,1.274" Click="btnMinus_Click"/>
         <TextBox x:Name="txtNumber" HorizontalAlignment="Left" Margin="262,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353" Height="43"/>
-        <Button x:Name="btnBack" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="44,188,0,0" VerticalAlignment="Top" Height="29" Width="106" Click="btnBack_Click_1" FontSize="18"/>
+        <Button x:Name="btnBack" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="44,188,0,0" VerticalAlignment="Top" Height="29" Width="106" FontSize="18" Click="btnBack_Click"/>
         <Button x:Name="btnPc" Content="%" HorizontalAlignment="Left" Margin="44,287,0,0" VerticalAlignment="Top" Height="33" Width="106" FontSize="18" Click="btnPc_Click"/>
     </Grid>
 </Window>
